@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+db.sqlite3
+
+# Media files
+media/
+
+# VSCode
+.vscode/
+
+# Static files built
+/staticfiles/
+
+# System files
+.DS_Store
+
+# Python virtualenv
+venv/
+env/
+
+# Pytest cache
+.pytest_cache/
+
+# Django migrations (optional to ignore generated migrations)
+# movies/migrations/*.pyc

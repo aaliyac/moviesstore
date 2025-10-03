@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class='container py-4'>
+    <h1>Create Petition</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ template_data.form.title.label_tag }}
+            {{ template_data.form.title }}
+            {{ template_data.form.title.errors }}
+        </div>
+        <div class="mb-3">
+            {{template_data.form.description.label_tag }}
+            {{ template_data.form.description }}
+            {{ template_data.form.description.errors}}
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Petition</button>
+        <a class="'btn btn-secondary] href="{% url 'movies.petitions' %}">Cancel</a>
+        </form>
+</div>
+{% endblock %}
+
